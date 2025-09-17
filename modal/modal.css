@@ -1,0 +1,79 @@
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal-open {
+  display: flex;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-title {
+  color: #292929;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.modal-text {
+  color: #7c7c7c;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.modal-body {
+  border-radius: 12px;
+  background-color: #fff;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: calc(100% - 40px);
+  max-width: 350px;
+}
+
+.modal-actions {
+  padding-top: 6px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.action {
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #292929;
+  font-size: 14px;
+  line-height: 20px;
+  border: 0;
+  width: 100%;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.action-success {
+  background-color: #10a957;
+  color: #fff;
+}
