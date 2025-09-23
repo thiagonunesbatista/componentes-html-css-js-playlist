@@ -1,0 +1,78 @@
+* {
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  background-color: #1e1e1e;
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress-bar {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 328px;
+  padding: 20px 24px;
+  display: flex;
+  gap: 8px;
+}
+
+.progress-bar__details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.progress-bar__value-container {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+  padding-bottom: 3px;
+}
+
+.progress-bar__percentage {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+.progress-bar__status {
+  font-size: 10px;
+  line-height: 19px;
+  color: #6f6f6f;
+}
+
+.progress-bar__line {
+  height: 8px;
+  width: 100%;
+  border-radius: 64px;
+  display: block;
+}
+
+.progress-bar__line-container {
+  background-color: #e0e0e0;
+  height: 8px;
+  width: 100%;
+  border-radius: 64px;
+}
+
+.progress-bar--success .progress-bar__line {
+  background-color: #198038;
+}
+
+.progress-bar--error .progress-bar__line {
+  background-color: #da1e28;
+}
+
+.progress-bar--warning .progress-bar__line {
+  background-color: #f1c21b;
+}
+
+.progress-bar--informative .progress-bar__line {
+  background-color: #0f62fe;
+}

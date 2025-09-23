@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress Bar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../global/reset.css" />
+    <link rel="stylesheet" href="./progressBar.css" />
+  </head>
+  <body>
+    <div class="progress-bar">
+      <img src="./assets/success-icon.png" width="40" height="40" />
+
+      <div class="progress-bar__details">
+        <div class="progress-bar__value-container">
+          <p class="progress-bar__percentage"></p>
+          <p class="progress-bar__status"></p>
+        </div>
+
+        <div class="progress-bar__line-container">
+          <span class="progress-bar__line"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./progressBar.js"></script>
+  </body>
+</html>
